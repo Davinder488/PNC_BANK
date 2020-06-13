@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PNC_BANK]">
+  <test thread-count="5" name="BankingApp Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pncbank.TestCases.TC_EditCustomer_002">
+      <class name="com.pncbank.TestCases.TC_DepositMoneyTest_006">
         <methods>
+          <include name="depositMoney"/>
+          <include name="teardown"/>
           <include name="setup"/>
-          <include name="editTestCase"/>
         </methods>
-      </class> <!-- com.pncbank.TestCases.TC_EditCustomer_002 -->
+      </class> <!-- com.pncbank.TestCases.TC_DepositMoneyTest_006 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- BankingApp Test(failed) -->
+</suite> <!-- Failed suite [PNC_BANK] -->

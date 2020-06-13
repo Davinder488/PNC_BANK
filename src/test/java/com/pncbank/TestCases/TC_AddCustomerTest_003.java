@@ -18,6 +18,7 @@ public class TC_AddCustomerTest_003 extends BaseClass{
 		lp.setPassword(password);
 		lp.clickSubmit();
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		
 		Thread.sleep(3000);
 		

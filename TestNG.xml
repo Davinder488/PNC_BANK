@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PNC_BANK">
+
+
+
+<test name="BankingApp Test">
+        <parameter name="browser" value="chrome"  />
+        <classes>
+       
+       
+         <class name="com.pncbank.TestCases.TC_AddCustomerTest_003" />
+          <class name="com.pncbank.TestCases.TC_NewAccountTest_005" />
+          <class name="com.pncbank.TestCases.TC_LoginTest_001" />
+        <class name="com.pncbank.TestCases.TC_EditCustomer_002" />
+        <class name="com.pncbank.TestCases.TC_AddCustomerTest_003" />
+        <class name="com.pncbank.TestCases.TC_DeleteCustomerPage_004" />
+         <class name="com.pncbank.TestCases.TC_BalanceEnqueryTest_008"  />
+        <class name="com.pncbank.TestCases.TC_ChangePasswordTest_007"  />
+          <class name="com.pncbank.TestCases.TC_LogoutTest_010"  />
+        <class name="com.pncbank.TestCases.TC_MiniStatementForm_009"  />
+         <class name="com.pncbank.TestCases.TC_DepositMoneyTest_006" />
+          
+           
+         
+       
+
+        
+       
+
+        
+          
+       
+        
+       
+       
+        
+        
+        
+          </classes>
+</test>
+</suite>
