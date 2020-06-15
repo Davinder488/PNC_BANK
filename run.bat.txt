@@ -1,0 +1,2 @@
+cd C:\Users\davin\eclipse-workspace\PNC_BANK
+mvn clean install
