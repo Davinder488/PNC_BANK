@@ -3,6 +3,13 @@
 
 <suite name="PNC_BANK">
 
+    <listeners>
+    
+    
+    <listener class-name="com.pncbank.Utilities.Reporting"/>
+    
+    </listeners>
+
 
 
 <test name="BankingApp Test">
@@ -10,9 +17,10 @@
         <classes>
        
        
-         <class name="com.pncbank.TestCases.TC_AddCustomerTest_003" />
+        <!--   <class name="com.pncbank.TestCases.TC_AddCustomerTest_003" /> -->
           <class name="com.pncbank.TestCases.TC_NewAccountTest_005" />
-          <class name="com.pncbank.TestCases.TC_LoginTest_001" />
+         
+            <class name="com.pncbank.TestCases.TC_LoginTest_001" />
         <class name="com.pncbank.TestCases.TC_EditCustomer_002" />
         <class name="com.pncbank.TestCases.TC_AddCustomerTest_003" />
         <class name="com.pncbank.TestCases.TC_DeleteCustomerPage_004" />
@@ -22,7 +30,6 @@
         <class name="com.pncbank.TestCases.TC_MiniStatementForm_009"  />
          <class name="com.pncbank.TestCases.TC_DepositMoneyTest_006" />
           
-           
          
        
 

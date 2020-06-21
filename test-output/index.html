@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-PNC_BANK">
-              <span class="suite-name border-passed">PNC_BANK</span>
+              <span class="suite-name border-failed">PNC_BANK</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-PNC_BANK" class="hide-methods failed suite-PNC_BANK"> (hide)</a> <!-- hide-methods failed suite-PNC_BANK -->
+                      <a href="#" panel-name="suite-PNC_BANK" class="show-methods failed suite-PNC_BANK"> (show)</a> <!-- show-methods failed suite-PNC_BANK -->
+                    </span>
+                    <div class="method-list-content failed suite-PNC_BANK">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_DepositMoneyTest_006" hash-for-method="depositMoney">depositMoney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-PNC_BANK -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,47 @@
                     <div class="method-list-content passed suite-PNC_BANK">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_BalanceEnqueryTest_008" hash-for-method="BalanceEnqueryTestCase">BalanceEnqueryTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_ChangePasswordTest_007" hash-for-method="ChangepasswordTestCase">ChangepasswordTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_DeleteCustomerPage_004" hash-for-method="DeleteTestCase">DeleteTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_LogoutTest_010" hash-for-method="Logoutend">Logoutend</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_MiniStatementForm_009" hash-for-method="MiniStatement">MiniStatement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_NewAccountTest_005" hash-for-method="NewAccountTest">NewAccountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_AddCustomerTest_003" hash-for-method="addNewCustomer">addNewCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_EditCustomer_002" hash-for-method="editTestCase">editTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PNC_BANK" title="com.pncbank.TestCases.TC_LoginTest_001" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-PNC_BANK -->
@@ -117,6 +171,147 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-PNC_BANK" class="panel PNC_BANK">
+          <div class="suite-PNC_BANK-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.pncbank.TestCases.TC_DepositMoneyTest_006</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="depositMoney">
+                  </a> <!-- depositMoney -->
+                  <span class="method-name">depositMoney</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;...Input.php&quot;&gt;Deposit&lt;/a&gt; is not clickable at point (120, 396). Other element would receive the click: &lt;div id=&quot;primis_container_div&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=83.0.4103.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-C4GOGT3&apos;, ip: &apos;192.168.117.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\davin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7fcf66f2f077b0e59156f420d26d4616
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.pncbank.PageObjects.DepositPage.ClickonDepositLink(DepositPage.java:37)
+	at com.pncbank.TestCases.TC_DepositMoneyTest_006.depositMoney(TC_DepositMoneyTest_006.java:30)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PNC_BANK-class-failed -->
+          <div class="suite-PNC_BANK-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pncbank.TestCases.TC_NewAccountTest_005</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewAccountTest">
+                  </a> <!-- NewAccountTest -->
+                  <span class="method-name">NewAccountTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PNC_BANK-class-passed -->
+          <div class="suite-PNC_BANK-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pncbank.TestCases.TC_ChangePasswordTest_007</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangepasswordTestCase">
+                  </a> <!-- ChangepasswordTestCase -->
+                  <span class="method-name">ChangepasswordTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PNC_BANK-class-passed -->
+          <div class="suite-PNC_BANK-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pncbank.TestCases.TC_EditCustomer_002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editTestCase">
+                  </a> <!-- editTestCase -->
+                  <span class="method-name">editTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PNC_BANK-class-passed -->
+          <div class="suite-PNC_BANK-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pncbank.TestCases.TC_DeleteCustomerPage_004</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteTestCase">
+                  </a> <!-- DeleteTestCase -->
+                  <span class="method-name">DeleteTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PNC_BANK-class-passed -->
+          <div class="suite-PNC_BANK-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pncbank.TestCases.TC_LoginTest_001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PNC_BANK-class-passed -->
+          <div class="suite-PNC_BANK-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pncbank.TestCases.TC_MiniStatementForm_009</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MiniStatement">
+                  </a> <!-- MiniStatement -->
+                  <span class="method-name">MiniStatement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PNC_BANK-class-passed -->
+          <div class="suite-PNC_BANK-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pncbank.TestCases.TC_LogoutTest_010</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logoutend">
+                  </a> <!-- Logoutend -->
+                  <span class="method-name">Logoutend</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PNC_BANK-class-passed -->
           <div class="suite-PNC_BANK-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -132,6 +327,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-PNC_BANK-class-passed -->
+          <div class="suite-PNC_BANK-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pncbank.TestCases.TC_BalanceEnqueryTest_008</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BalanceEnqueryTestCase">
+                  </a> <!-- BalanceEnqueryTestCase -->
+                  <span class="method-name">BalanceEnqueryTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PNC_BANK-class-passed -->
         </div> <!-- panel PNC_BANK -->
         <div panel-name="test-xml-PNC_BANK" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -142,10 +352,22 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PNC_BANK&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.pncbank.Utilities.Reporting&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;BankingApp Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.pncbank.TestCases.TC_NewAccountTest_005&quot;/&gt;
+      &lt;class name=&quot;com.pncbank.TestCases.TC_LoginTest_001&quot;/&gt;
+      &lt;class name=&quot;com.pncbank.TestCases.TC_EditCustomer_002&quot;/&gt;
       &lt;class name=&quot;com.pncbank.TestCases.TC_AddCustomerTest_003&quot;/&gt;
+      &lt;class name=&quot;com.pncbank.TestCases.TC_DeleteCustomerPage_004&quot;/&gt;
+      &lt;class name=&quot;com.pncbank.TestCases.TC_BalanceEnqueryTest_008&quot;/&gt;
+      &lt;class name=&quot;com.pncbank.TestCases.TC_ChangePasswordTest_007&quot;/&gt;
+      &lt;class name=&quot;com.pncbank.TestCases.TC_LogoutTest_010&quot;/&gt;
+      &lt;class name=&quot;com.pncbank.TestCases.TC_MiniStatementForm_009&quot;/&gt;
+      &lt;class name=&quot;com.pncbank.TestCases.TC_DepositMoneyTest_006&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BankingApp Test --&gt;
 &lt;/suite&gt; &lt;!-- PNC_BANK --&gt;
@@ -159,7 +381,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BankingApp Test (1 class)</span>
+                <span class="test-name">BankingApp Test (10 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +407,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addNewCustomer')
-data.setCell(0, 2, 'com.pncbank.TestCases.TC_AddCustomerTest_003')
-data.setCell(0, 3, 10772);
+data.setCell(0, 1, 'editTestCase')
+data.setCell(0, 2, 'com.pncbank.TestCases.TC_EditCustomer_002')
+data.setCell(0, 3, 11680);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'DeleteTestCase')
+data.setCell(1, 2, 'com.pncbank.TestCases.TC_DeleteCustomerPage_004')
+data.setCell(1, 3, 11630);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addNewCustomer')
+data.setCell(2, 2, 'com.pncbank.TestCases.TC_AddCustomerTest_003')
+data.setCell(2, 3, 10421);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'BalanceEnqueryTestCase')
+data.setCell(3, 2, 'com.pncbank.TestCases.TC_BalanceEnqueryTest_008')
+data.setCell(3, 3, 8956);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'MiniStatement')
+data.setCell(4, 2, 'com.pncbank.TestCases.TC_MiniStatementForm_009')
+data.setCell(4, 3, 8950);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ChangepasswordTestCase')
+data.setCell(5, 2, 'com.pncbank.TestCases.TC_ChangePasswordTest_007')
+data.setCell(5, 3, 8592);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Logoutend')
+data.setCell(6, 2, 'com.pncbank.TestCases.TC_LogoutTest_010')
+data.setCell(6, 3, 8455);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'depositMoney')
+data.setCell(7, 2, 'com.pncbank.TestCases.TC_DepositMoneyTest_006')
+data.setCell(7, 3, 7789);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'NewAccountTest')
+data.setCell(8, 2, 'com.pncbank.TestCases.TC_NewAccountTest_005')
+data.setCell(8, 3, 6865);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginTest')
+data.setCell(9, 2, 'com.pncbank.TestCases.TC_LoginTest_001')
+data.setCell(9, 3, 3014);
 window.suiteTableData['PNC_BANK']= { tableData: data, tableDiv: 'times-div-PNC_BANK'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-PNC_BANK">
               </div> <!-- times-div-PNC_BANK -->
             </div> <!-- times-div -->
@@ -220,18 +478,155 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pncbank.TestCases.TC_AddCustomerTest_003</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_NewAccountTest_005</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">addNewCustomer</span>
-                <span class="method-start">4957 ms</span>
+                <span class="method-name">NewAccountTest</span>
+                <span class="method-start">4491 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">15730 ms</span>
+                <span class="method-start">11367 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">12035 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">15804 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">18819 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_EditCustomer_002</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">19468 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">editTestCase</span>
+                <span class="method-start">23206 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">34887 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_AddCustomerTest_003</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">35528 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addNewCustomer</span>
+                <span class="method-start">39297 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">49719 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_DeleteCustomerPage_004</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">50364 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">DeleteTestCase</span>
+                <span class="method-start">54176 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">65816 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_BalanceEnqueryTest_008</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">66462 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">BalanceEnqueryTestCase</span>
+                <span class="method-start">70269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">79226 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_ChangePasswordTest_007</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">79867 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ChangepasswordTestCase</span>
+                <span class="method-start">83656 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">92249 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_LogoutTest_010</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">93460 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Logoutend</span>
+                <span class="method-start">97236 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">105692 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_MiniStatementForm_009</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">106335 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">MiniStatement</span>
+                <span class="method-start">110085 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">119036 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pncbank.TestCases.TC_DepositMoneyTest_006</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">119678 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">depositMoney</span>
+                <span class="method-start">123372 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">131163 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
